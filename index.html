@@ -36,11 +36,7 @@
 
         /* Background image styles */
         body {
-            margin: 0; /* Remove default margin */
-            background-image: url('images/background.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
-            background-size: cover; /* Cover ensures the image covers the entire background */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            padding-top: 20px; /* Adjust top padding to vertically center the text */
+            
         }
         /*link styling*/
         .links {
@@ -120,6 +116,27 @@
             bottom: 0; /* Align to bottom */
             width: 100%; /* Full width */
         }
+
+        @media (min-width: 768px) {
+        /* Desktop styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
+            background-image: url('images/background.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+            background-size: cover; /* Cover ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            padding-top: 20px; /* Adjust top padding to vertically center the text */
+        }
+        header, nav, section, footer {
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     </style>
 </head>
