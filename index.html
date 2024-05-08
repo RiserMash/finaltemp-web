@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Button on Background Image</title>
+    <style>
+        /* Container styles */
+        .container {
+            position: relative; /* Ensure the container is positioned relative to its normal position */
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Align items with space between */
+            align-items: center; /* Center items vertically */
+            padding: 20px; /* Add padding for spacing */
+            color: white; /* Set text color */
+            font-size: 20px; /* Set font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text for better readability */
+        }
+
+        /* Button styles */
+        .button {
+            background-color: #007bff; /* Set background color */
+            color: white; /* Set text color */
+            padding: 11px 22px; /* Set padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor on hover */
+            font-weight:bold;
+        }
+
+        /* Header styles */
+        h1 {
+            margin-left: 25px;
+            font-size: 24px; /* Set font size */
+        }
+
+        /* Background image styles */
+        body {
+            margin: 0; /* Remove default margin */
+            background-image: url('images/background.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+            background-size: cover; /* Cover ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            padding-top: 20px; /* Adjust top padding to vertically center the text */
+        }
+        /*link styling*/
+        .links {
+            font-size: 24px;
+            margin-left: 1000px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit; /* Use the color of the parent element */
+            margin-right: 10px;
+        }
+        /* Optional: Add margin to the last link to prevent extra space */
+        a:last-child {
+            margin-right: 0; /* Reset margin for the last link */
+        }
+
+        /*Slogans Styling*/
+        .slogans-container{
+            margin-left: 45px;
+            margin-top: 100px;
+        }
+        .line1{
+            color: white;
+        }
+        .line2{
+            font-size: 50px;
+            font-weight: bold;
+            color:white;
+        }
+        .line3{
+            font-size: 50px;
+            font-weight: bolder;
+            color:white;
+        }
+        /*form containing*/
+        .form-container {
+            border: 1px solid #ccc; /* Add border around the form */
+            padding: 20px; /* Add padding inside the border */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            width: 800px; /* Set width for the form container */
+            margin-left:45px; /* Center the form horizontally */
+            background-color:white;
+        }
+
+        /* Style for form elements */
+        form {
+            display: flex; /* Use flexbox layout */
+            flex-direction: row; /* Arrange elements horizontally */
+        }
+            /* Style for dropdown*/
+    .dropdown-list {
+      width: 200px; /* Set the width of the dropdown */
+      padding: 8px; /* Add padding for better appearance */
+      border: 1px solid #ccc; /* Add border for visual distinction */
+      border-radius: 4px; /* Add border radius for rounded corners */
+      font-size: 16px; /* Set font size */
+      margin-right: 35px;
+    }
+
+    .text-container {
+            border: 1px solid #ccc; /* Add border around the form */
+            padding: 20px; /* Add padding inside the border */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            width: 150px; /* Set width for the form container */
+            margin-left:45px; /* Center the form horizontally */
+            background-color:white;
+        }
+
+        /*Bottom Boader*/
+        
+        /* Style for footer */
+        footer {
+            background-color: #f8f9fa; /* Set background color */
+            padding: 50px; /* Add padding inside the footer */
+            text-align: center; /* Center-align content */
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Align to bottom */
+            width: 100%; /* Full width */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job portal</h1>
+        <div class="links">
+            <a disabled selected>Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button class="button"><a href="Any.html">Browse Jobs</a></button>
+    </div>
+    <div class="slogans-container">
+        <div class="line1">We have countless job opportunities for you</div>
+        <div class="line2">Why Wait</div>
+        <div class="line3">Browse Through</div>
+    </div>
+    <div class="text-container">Search your job</div>
+
+    <div class="form-container"
+    <h2></h2>
+    <form action="#" method="post">
+        <select class="dropdown-list" onchange="la(this.value)">
+            <option disabled selected>Salary</option>
+            <option>0-R4999.00</option>
+            <option>R5000.00-R9999.00</option>
+            <option>R10000-R19999.00</option>
+            <option>from R20000.00</option>
+          </select>
+          <select class="dropdown-list">
+            <option disabled selected>category</option>
+            <option>Sales</option>
+            <option>Marketing</option>
+            <option>Finance</option>
+            <option>Healthcare</option>
+            <option>Education</option>
+            <option>Technology</option>
+          </select>
+          <select class="dropdown-list" onchange="la(this.value)">
+            <option disabled selected>Location</option>
+            <option>Eastern Cape</option>
+            <option>Free State</option>
+            <option>Gauteng</option>
+            <option>KwaZulu-Natal</option>
+            <option>Limpopo</option>
+            <option>Mpumalanga</option>
+            <option>Northern Cape</option>
+            <option>North West</option>
+            <option>Western Cape</option>
+          </select>
+          <button class="button">Search</button>
+    </form>
+    </div>
+    <div class="bottom-boader">
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Website.Rise Infinite Solutions</p>
+    </footer>
+
+
+    <!--Javascript---->>
+    <script src="js/browse.js"></script>
+</body>
+</html>

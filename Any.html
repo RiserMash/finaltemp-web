@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAJOBSEEKER</title>
+<style>
+    /* Style for header*/
+    h1 {
+    border-top-style: solid ;
+    border-bottom-style: solid ;
+    border-left-style: solid;
+    border-left-width: 0;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+    /*style for links */
+    .links {
+        text-align:center;
+        color:black;
+}
+    /* Style for dropdown*/
+    .dropdown-list {
+      width: 200px; /* Set the width of the dropdown */
+      padding: 8px; /* Add padding for better appearance */
+      border: 1px solid #ccc; /* Add border for visual distinction */
+      border-radius: 4px; /* Add border radius for rounded corners */
+      font-size: 16px; /* Set font size */
+    }
+
+  /* Style for container */
+  .job-container {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* Style for job cards */
+  .job-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(242, 238, 238, 0.1);
+    background-color: white;
+    width: 800px;
+    flex: 1 1 300px; /* Adjust width as needed */
+    margin-left: 600px;
+  }
+
+  /* Style for job title */
+  .job-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Style for job company and location */
+  .job-meta {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  /* Style for job description */
+  .job-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+/* Style for the search button */
+.search-button {
+  padding: 4px 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the search button on hover */
+.search-button:hover {
+  background-color: #0056b3;
+}
+.text{
+  color:black;
+}
+
+a {
+            text-decoration: none;
+            color: inherit; /* Use the color of the parent element */
+            margin-right: 10px;
+        }
+ /*logo styling*/
+ .logo{
+  border-radius: 8px;
+  justify-content: flex-end ;
+  align-items: flex-end;
+
+}
+
+.container {
+            position: static; /* Ensure the container is positioned relative to its normal position */
+            display: flex; /* Use flexbox layout */
+            justify-content: flex-start; /* Align items with space between */
+            align-items: Right; /* Center items vertically */
+            padding: 20px; /* Add padding for spacing */
+            color:black; /* Set text color */
+            font-size: 20px; /* Set font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text for better readability */
+        }
+        
+        /* Style for form elements */
+        form {
+            display: inline-block; /* Use flexbox layout */
+            flex-direction: column; /* Arrange elements horizontally */
+        }
+            /* Style for dropdown*/
+            label {
+        display: inline-flex;
+        align-items: center;
+    }
+    input[type="radio"] {
+        margin-right: 5px; /* Add some space between radio button and label */
+    }
+    .button {
+            background-color: #007bff; /* Set background color */
+            color: white; /* Set text color */
+            padding: 11px 22px; /* Set padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Change cursor on hover */
+            font-weight:bold;
+        }
+
+</style>
+</head>
+<body>
+    <h1>JOB PORTAL</h1>
+    <div class="links"> 
+      <a href="index.html">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SUBSCRIBE</a>
+    </div>
+    <div class="container">
+      <div class="form-container"
+      <h2></h2>
+      <form action="#" method="post">
+            
+            <label>Minimum</label>
+            <label class="radio-container">
+              <input type="radio" name="Minimum" value="R4000.00">R4000.00
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Minimum" value="R10000.00">R10000.00
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Minimum" value="R15000.00">R15000.00
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Minimum" value="R20000">R20000.00
+          </label><br>
+
+          <label>Category</label>
+            <label class="radio-container">
+              <input type="radio" name="Category" value="Education">Education
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Category" value="Finance">Finance
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Category" value="Healthcare">Healthcare
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Category" value="Marketing">Marketing
+          </label>
+          <label class="radio-container">
+            <input type="radio" name="Category" value="Sales">Sales
+        </label>
+        <label class="radio-container">
+          <input type="radio" name="Category" value="Technology">Technology
+      </label><br>
+
+      <label>Location</label>
+            <label class="radio-container">
+              <input type="radio" name="Location" value="Eastern Cape">East-Cape
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Location" value="Free State">Free State
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Location" value="Gauteng">Gauteng
+          </label>
+          <label class="radio-container">
+              <input type="radio" name="Location" value="KwaZulu-Natal">K-Natal
+          </label>
+          <label class="radio-container">
+            <input type="radio" name="Location" value="Limpopo">Limpopo
+        </label>
+        <label class="radio-container">
+          <input type="radio" name="Location" value="Mpumalanga">Mpumalanga
+      </label>
+      <label class="radio-container">
+        <input type="radio" name="Location" value="Northern Cape">North-Cape
+    </label>
+    <label class="radio-container">
+      <input type="radio" name="Location" value="North West">North West
+  </label>
+  <label class="radio-container">
+    <input type="radio" name="Location" value="Western Cape">W-Cape
+</label><br>
+
+
+
+          <button class="button">Search</button>
+      </form>
+
+    </div>
+
+    <div class="text">  
+  <div class="job-container">
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://dischem.simplify.hr/vacancy/dasfns?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Online Content Graduate</a></div>
+      <div class="job-meta">Company: Dis-chem | Location: Gauteng Midrand</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: Contract  <br>
+          Closing Date: 20 May 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/dischem.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://dischem.simplify.hr/vacancy/cdvcla?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Development Manager</a></div>
+      <div class="job-meta">Company: Dis-chem | Location: Gauteng Midrand</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: Permanent<br>
+          Closing Date: 20 May 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/dischem.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://dischem.simplify.hr/vacancy/ygflmg?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Casual Cashier</a></div>
+      <div class="job-meta">Company: Dis-chem | Location: Gauteng Midrand</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: Part-Time<br>
+          Closing Date: 20 May 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/dischem.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://dischem.simplify.hr/Vacancy/78613?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic">Trainee Assistant Manager Talent Pool</a></div>
+      <div class="job-meta">Company: Dis-chem | Location: Gauteng | Johannesburg</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: Permanent<br>
+          Closing Date: 31 July 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/dischem.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://www.careers24.com/jobs/adverts/2131065-sales-consultant-immediately-available-no-sales-experience-needed-no-cold-calling-randburg/?rx_campaign=adzuna1&rx_ch=jobp4p&rx_group=107239&rx_job=2131065&rx_medium=cpc&rx_r=none&rx_source=Adzuna&rx_ts=20240507T123605Z&rx_vp=cpc&utm_campaign=aggregator&utm_medium=cpc&utm_source=adzuna&utm_content=adz_4022&rx_p=eyJhbGciOiJIUzI1NiJ9.eyJlcG9jaCI6MTcxNTEzNjc5NCwic291cmNlX3JlZiI6IjIxMzEwNjUiLCJwcF9uYW1lIjoicmVjcnVpdGljcyIsInNyY19pZCI6MTU2NzksImNsaWNrX2lkIjoiQ09ZOUhlWU03eEdRN0o4bXNnNnRjUSJ9.Bdu9eIwtYpgKZ1aS1_03x23kF2G6ap74aTFJQDMFLBQ&rx_viewer=f9b982990ad911efb6b07d9ba638d87ce3ff17b9d9874b4bb07796f2378e149d">Sales Consultant</a></div>
+      <div class="job-meta">Company: UDM | Location: Gauteng | Ranburg</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: Permanent<br>
+          Closing Date: 26 June 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/udm.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://careers.tracker.co.za/applicant/index.php?controller=Listings&method=view&listingid=18547d34-0728-4387-a235-e57f54e81b41">Business Sales Consultant</a></div>
+      <div class="job-meta">Company: Tracker| Location: Kwazulu Natal</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: permanent <br>
+          Closing Date: 10 May 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/tracker.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+
+    <div class="job-card">
+      <div class="job-title"><a href="https://careers.tracker.co.za/applicant/index.php?controller=Listings&method=view&listingid=18547d34-0728-4387-a235-e57f54e81b41">Business Sales Consultant</a></div>
+      <div class="job-meta">Company: Tracker| Location: Kwazulu Natal</div>
+      <div class="job-description">
+        <p>
+          posted: 09 May 2024 <br>
+          Job Type: permanent <br>
+          Closing Date: 10 May 2024<br>
+          <div class="logo"><img class="bordered-image" src="images/tracker.jpg" alt="Your Image"></div>
+        </p>
+        
+      </div>
+    </div>
+
+      <div class="job-card">
+        <div class="job-title">Cantact Center learnership</div>
+        <div class="job-meta">Company:Tracker | Location: Johannesburg</div>
+        <div class="job-description">
+          <p>Tracker Connect is offering the opportunity of a lifetime to 25 of South Africa's young people with great potential, through a Call Centre Learnership NQF Level 4 which will be based at Tracker Head Office in Johannesburg. The purpose of the Learnership is to capacitate young unemployed youth with call centre skills, experience and knowledge required to deliver excellent customer service.</p>
+          <p>This learning intervention is a full qualification which consists of structured unit standard-based learning combined with practical/workplace experience which totals to 132 credits. After having gone through the qualification the young people will be equipped with the following competencies</p>
+          <p>If you are if you are interested in this opportunity <a href="https://careers.tracker.co.za/applicant/index.php?controller=Listings&method=view&listingid=8782640e-3c43-4128-9e33-5bd571308d20"><b>CLICK HERE</b></a></p>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-title">Cantact Center learnership</div>
+        <div class="job-meta">Company:Tracker | Location: Johannesburg</div>
+        <div class="job-description">
+          <p>Tracker Connect is offering the opportunity of a lifetime to 25 of South Africa's young people with great potential, through a Call Centre Learnership NQF Level 4 which will be based at Tracker Head Office in Johannesburg. The purpose of the Learnership is to capacitate young unemployed youth with call centre skills, experience and knowledge required to deliver excellent customer service.</p>
+          <p>This learning intervention is a full qualification which consists of structured unit standard-based learning combined with practical/workplace experience which totals to 132 credits. After having gone through the qualification the young people will be equipped with the following competencies</p>
+          <p>If you are if you are interested in this opportunity <a href="https://careers.tracker.co.za/applicant/index.php?controller=Listings&method=view&listingid=8782640e-3c43-4128-9e33-5bd571308d20"><b>CLICK HERE</b></a></p>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-title">Cantact Center learnership</div>
+        <div class="job-meta">Company:Tracker | Location: Johannesburg</div>
+        <div class="job-description">
+          <p>Tracker Connect is offering the opportunity of a lifetime to 25 of South Africa's young people with great potential, through a Call Centre Learnership NQF Level 4 which will be based at Tracker Head Office in Johannesburg. The purpose of the Learnership is to capacitate young unemployed youth with call centre skills, experience and knowledge required to deliver excellent customer service.</p>
+          <p>This learning intervention is a full qualification which consists of structured unit standard-based learning combined with practical/workplace experience which totals to 132 credits. After having gone through the qualification the young people will be equipped with the following competencies</p>
+          <p>If you are if you are interested in this opportunity <a color="red" href="https://careers.tracker.co.za/applicant/index.php?controller=Listings&method=view&listingid=8782640e-3c43-4128-9e33-5bd571308d20"><b>CLICK HERE</b></a></p>
+        </div>
+      </div>
+
+  </div>
+</div>
+</body>
+</html>
