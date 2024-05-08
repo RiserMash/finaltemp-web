@@ -133,6 +133,21 @@ a {
             cursor: pointer; /* Change cursor on hover */
             font-weight:bold;
         }
+        @media (min-width: 768px) {
+        /* Desktop styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, nav, section, footer {
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+    }
 
 </style>
 </head>
